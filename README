@@ -1,0 +1,68 @@
+** Bernstein Vazirani Method;
+
+There is a secret number in a box. It is contain with 6 Bits (Zeros & ones)
+
+A classical computer can accomplish this task in 6 tries.
+
+A quantum computer using the (Bernstien Vazirani Method), can do the same task in 1 shot.
+
+Using Secret Number: 101001
+
+
+Classical Computer Algorithm to Determine What Is In The Box;
+
+Code in Box;
++------------+
+| 1 0 1 0 0 1|
++------------+
+
+Classical Computer ~ AND STATEMENTS; (X = No Match | M = Match)
+
++------------+
+| 0 0 0 0 0 1|
++------------+
+            M
++------------+
+| 0 0 0 0 1 0|
++------------+
+          X            
++------------+
+| 0 0 0 1 0 0|
++------------+
+        X
++------------+
+| 0 0 1 0 0 0|
++------------+
+      M
++------------+
+| 0 1 0 0 0 0|
++------------+
+    X
++------------+
+| 1 0 0 0 0 0|
++------------+
+  M
+
+Final Out Put;
++------------+
+| 1 0 1 0 0 1|
++------------+
+
+Classical Computer Finally Matches Code In Box!
+
+A quantum computer can achieve same goal in 1 try!
+
+This is shown by simulating all possible options at the same time
+
+Q0> ---H---|---*---|---H---|/------
+Q1> ---H---|---|---|---H---|-/-----
+Q2> ---H---|---|---|---H---|--/----
+Q3> ---H---|---|-*-|---H---|---/---
+Q4> ---H---|---|-|-|---H---|----/--
+Q5> ---H---|---|-|*|---H---|-----/-
+Q6> ---H---|---+-++|---H---|------/
+
+
+
+
+
